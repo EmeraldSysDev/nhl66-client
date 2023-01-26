@@ -92,6 +92,14 @@ export const chooseRegion = async (stream: Stream): Promise<Stream> => {
         {
             name: "NA West 2",
             value: "na-west-2"
+        },
+        {
+            name: "NA Central 1",
+            value: "na-central-1"
+        },
+        {
+            name: "NA Central 2",
+            value: "na-central-2"
         }
     ];
 
