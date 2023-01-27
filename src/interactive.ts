@@ -19,7 +19,7 @@ export const chooseGame = async (gameList: GameList): Promise<Game> => {
     if (gameList.games.length > 0) {
         gameList.games.forEach(game => {
             gamesOptions.push({
-                name: `${game.away_name} @ ${game.home_name} - ${game.status}`,
+                name: `${game.away_name}${game.status !== "Pre Game" ? ` (${game.away_score}) ` : " "}@ ${game.home_name}${game.status !== "Pre Game" ? ` (${game.home_score}) ` : " "}- ${game.status}`,
                 value: game
             });
         });
